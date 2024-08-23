@@ -1,0 +1,57 @@
+.gradient-bg{
+  /* global 92%+ browsers support */
+  background: radial-gradient(circle at 4% 28%, rgba(4, 12, 24, 1) 0%, rgba(0, 188, 212, 1) 50%, rgba(238, 130, 238, 1) 100%);
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .section__padding {
+      padding: 4rem;
+    }
+  
+    .section__margin {
+      padding: 4rem;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .section__padding {
+      padding: 4rem 2rem;
+    }
+  
+    .section__margin {
+      padding: 4rem 2rem;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .App {
+      margin: 0 5rem;
+    }
+  }
+  
+  @media screen and (min-width: 2000px) {
+    .App {
+      margin: 0 10rem;
+    }
+  }
