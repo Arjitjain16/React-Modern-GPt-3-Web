@@ -4,13 +4,13 @@ import "./App.css"
 const App = () => {
  
   return (
-    <div className="text-white bg-custom-radial px-6 md:px-8 lg:px-16 xl:px-32 ">
+    <div className="text-white bg-custom-radial px-6 md:px-8 lg:px-16 xl:px-28 overflow-hidden ">
       <div>
-       <Header />
        <Navbar />
+       <Header/>
       </div>
-      {/* <Brand/>
       <Whatgpt3 />
+      {/* <Brand/>
       <Features/>
       <Posibility/>
       <CTA/>

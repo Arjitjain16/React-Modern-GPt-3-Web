@@ -5,12 +5,12 @@ const Navbar = () => {
 
   const link = ["Home", "What is GPT?","Case Studies", "Blog"]
   return (
-    <div className="h-14 w-full flex item-center justify-between ">
-      <div className="flex items-center gap-9">
-        <div className="flex items-center">
-         <h1 className="logo text-3xl sm:text-xl md:text-3xl  font-bold">GPT-3</h1>
+    <div className="h-14 w-full flex item-center justify-between pt-6">
+      <div className="flex items-center gap-14">
+        <div className="flex items-center h-20 w-20">
+         <img src="src/assets/logo.svg" className="h-full w-full" alt="" />
         </div>
-        <div className="sm:flex items-center gap-4 text-xl sm:text-xs md:text-xl  hidden">
+        <div className="sm:flex items-center gap-8 text-xl sm:text-xs md:text-[1.3vmax]  hidden">
           {link.map((l, index) => (
             <a key={index} href="#" className="hover:text-orange-400">{l}</a> 
           ))}
@@ -18,7 +18,7 @@ const Navbar = () => {
       </div>
       <div className="sm:flex items-center gap-3 hidden">
         <button>Sign In</button>
-        <button className="py-2 px-4 bg-orange-400 text-white rounded">Sign Up</button>
+        <button className="py-1 px-3 bg-orange-400 text-white rounded">Sign Up</button>
       </div>
       <div className="flex items-center sm:hidden">
         { ToggleMenu 
@@ -27,7 +27,7 @@ const Navbar = () => {
        }
       </div>
       {ToggleMenu && (
-        <div className="absolute top-20 right-0 h-full w-[45vw] flex flex-col gap-8  sm:hidden z-50 bg-black  py-6 px-6 shadow-md">
+        <div className="absolute top-20 right-0 h-full w-[45vw] flex flex-col gap-8  sm:hidden z-50 bg-[#021D3D]  py-6 px-6 shadow-md">
           {link.map((l, index) => (
             <a key={index} href="#" className="block text-3xl hover:text-orange-400">{l}</a> 
           ))}
